@@ -10,7 +10,7 @@ In order to set it up you'll need:
 - Jenkinsfile from this repository
 - Jenkins configuration from this repository
 
-Quick Setup:
+## Quick Setup:
 ```
 git clone https://github.com/theoKaf-QA/allwynAssignment.git
 ```
@@ -65,14 +65,52 @@ allure generate
 allure open
 ```
 
-Jenkins
+## Jenkins:
+
 In order to run the tests on a CI/CD platform, we have used Jenkins installed locally on a windows machine, running it as a service
 and then accessing http://localhost:8080 to configure and run the jobs. Ideally with more time, I'd have created a docker image and a container
 that would spin up before each job.
 
-After installing Jenkins:
+After installing Jenkins and making sure the service runs locally, you'll need to login at least once and setup
+your admin account.
 
+Then the steps are as follows:
 
+1. A list of the required plugins is in the Jenkins Configuration Files folder called plugins.txt. 
+2.  - You will have to install them, the required ones are:
+- Allure Jenkins Plugin
+- Git plugin
+- Git client plugin
+- JUnit Plugin
+- Maven Integration Plugin
+- Pipeline
+- Pipeline Maven Integration Plugin
+- Pipeline Maven Plugin API
+
+After That:
+1. Go to http://localhost:8080/manage/configureTools/
+2. Under "Allure Commandline installations", add a new Allure Commandline named "Allure" that gets version 2.30.0 and installs it automatically
+3. Create a "New Item", and select "Pipeline"
+4. Scroll to "Pipeline" and from the dropdown select "Pipeline script from SCM"
+5. Under "SCM" select "Git"
+6. On the repository URL field type "https://github.com/theoKaf-QA/allwynAssignment.git"
+7. Under "Branches to build", type "*/main"
+8. Under script path, keep "Jenkinsfile"
+9. Click "Save"
+10. Go to your new Job
+11. Click Build Now (After the first time, you will be able to "Build With Parameters")
+12. On the left sidebar there will be an "Allure Report". Click on that to see the results (example below)
+13. If Allure does not work, the tests will be on the left sidebar under "Tests", albeit not very user-friendly
+14. Every next run the user can use the parameters to run what test they need (see below)
+If there is a need to setup a system from scratch from my configurations, please let me know and I'll upload those into the "Jenkins Configuration Files" folder.
+
+### Build With Parameters:
+![img_2.png](img_2.png)
+
+### Sample Reports:
+
+![img.png](img.png)
+![img_1.png](img_1.png)
 
 Description
 
