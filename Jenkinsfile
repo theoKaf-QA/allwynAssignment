@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven3'
-        jdk 'JDK17'
-    }
-
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['test', 'staging', 'prod'], description: 'Select test environment')
         string(name: 'BASE_URI', defaultValue: 'https://fakerestapi.azurewebsites.net', description: 'API Base URI')
