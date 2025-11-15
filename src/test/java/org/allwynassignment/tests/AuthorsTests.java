@@ -15,7 +15,6 @@ public class AuthorsTests extends BaseTest {
     @Test(priority = 1, description = "Verify GET all authors returns 200 and list of authors",
     groups = {"smoke"})
     @Tags({@Tag("smoke")})
-    @Story("Get All Authors")
     @Severity(SeverityLevel.CRITICAL)
     @Description("Test to verify that GET /Authors endpoint returns successful response")
     public void testGetAllAuthors_Success() {

@@ -59,12 +59,19 @@ public class AuthorValidations extends ValidationsAbstract<Author> implements Va
                 .isEmpty();
     }
 
-    @Step("Verify author has valid ID")
+    @Step("Verify author id is not null")
     @Override
     public void verifyHasValidID(Author author) {
         assertThat(author.getId())
                 .as("Author id is null")
                 .isNotNull();
+    }
+
+    @Step("Verify author id is null")
+    public void verifyHasInvalidID(Author author) {
+        assertThat(author.getId())
+                .as("Author id is null")
+                .isNull();
     }
 
 
@@ -84,11 +91,18 @@ public class AuthorValidations extends ValidationsAbstract<Author> implements Va
                 .isEqualTo(expectedIdBook);
     }
 
-    @Step("Verify author has valid ID Book")
+    @Step("Verify author id Book is not null")
     public void verifyAuthorHasValidIDBook(Author author) {
         assertThat(author.getIdBook())
-                .as("Author idBook is expected: {}", author.getIdBook())
+                .as("Author idBook is null")
                 .isNotNull();
+    }
+
+    @Step("Verify author id Book is null")
+    public void verifyAuthorHasInvalidIDBook(Author author) {
+        assertThat(author.getIdBook())
+                .as("Author idBook is null")
+                .isNull();
     }
 
     @Step("Verify author first name matches expected: {expectedFirstName}")

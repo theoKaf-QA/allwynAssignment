@@ -57,9 +57,16 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
                 .isEmpty();
     }
 
-    @Step("Verify book has valid ID")
+    @Step("Verify book id is not null")
     @Override
     public void verifyHasValidID(Book book) {
+        assertThat(book.getId())
+                .as("Book id is null")
+                .isNotNull();
+    }
+
+    @Step("Verify book id is null")
+    public void verifyHasInvalidID(Book book) {
         assertThat(book.getId())
                 .as("Book id is null")
                 .isNotNull();
@@ -75,19 +82,27 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
     }
 
     @Step("Verify book title matches expected: {expectedTitle}")
-    public void verifyBookTitle(Book book, String expectedTitle) {
+    public void verifyBookTitleMatches(Book book, String expectedTitle) {
         assertThat(book.getTitle())
                 .as("Book title is expected: {}", expectedTitle)
                 .isNotNull()
                 .matches(expectedTitle);
     }
 
-    @Step("Verify book has valid title")
+    @Step("Verify book title is not null")
     public void verifyBookHasValidTitle(Book book) {
         assertThat(book.getTitle())
                 .as("Book title is null")
                 .isNotNull();
     }
+
+    @Step("Verify book title is null")
+    public void verifyBookHasInvalidTitle(Book book) {
+        assertThat(book.getTitle())
+                .as("Book title is null")
+                .isNull();
+    }
+
 
     @Step("Verify book description matches expected: {expectedDescription}")
     public void verifyBookDescription(Book book, String expectedDescription) {
@@ -97,11 +112,18 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
                 .matches(expectedDescription);
     }
 
-    @Step("Verify book has valid description")
+    @Step("Verify book description is not null")
     public void verifyBookHasValidDescription(Book book) {
-        assertThat(book.getTitle())
+        assertThat(book.getDescription())
                 .as("Book description is null")
                 .isNotNull();
+    }
+
+    @Step("Verify book description is null")
+    public void verifyBookHasInvalidDescription(Book book) {
+        assertThat(book.getDescription())
+                .as("Book description is null")
+                .isNull();
     }
 
     @Step("Verify book page count matches expected: {expectedPageCount}")
@@ -112,8 +134,15 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
                 .isEqualTo(expectedPageCount);
     }
 
-    @Step("Verify book has valid page count")
+    @Step("Verify book page count is not null")
     public void verifyBookHasValidPageCount(Book book) {
+        assertThat(book.getPageCount())
+                .as("Book page count is null")
+                .isNotNull();
+    }
+
+    @Step("Verify book page count is null")
+    public void verifyBookHasInvalidPageCount(Book book) {
         assertThat(book.getPageCount())
                 .as("Book page count is null")
                 .isNotNull();
@@ -127,11 +156,18 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
                 .matches(expectedExcerpt);
     }
 
-    @Step("Verify book has valid excerpt")
+    @Step("Verify book excerpt is not null")
     public void verifyBookHasValidExcerpt(Book book) {
         assertThat(book.getPageCount())
                 .as("Book excerpt is null")
                 .isNotNull();
+    }
+
+    @Step("Verify book excerpt is null")
+    public void verifyBookHasInvalidExcerpt(Book book) {
+        assertThat(book.getExcerpt())
+                .as("Book excerpt is null")
+                .isNull();
     }
 
     @Step("Verify book publish date matches expected: {expectedPublishDate}")
@@ -141,11 +177,18 @@ public class BookValidations extends ValidationsAbstract<Book> implements Valida
                 .isNotNull()
                 .matches(expectedPublishDate);
     }
-    @Step("Verify book has valid publish date")
+    @Step("Verify book publish date is not null")
     public void verifyBookHasValidPublishDate(Book book) {
         assertThat(book.getPublishDate())
                 .as("Book publish date is null")
                 .isNotNull();
+    }
+
+    @Step("Verify book publish date is null")
+    public void verifyBookHasInvalidPublishDate(Book book) {
+        assertThat(book.getPublishDate())
+                .as("Book publish date is null")
+                .isNull();
     }
 
     @Step("Verify book publish date format is valid (ISO 8601)")
