@@ -1,15 +1,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Allwyn Assignment Test Automation" verbose="1" parallel="classes" thread-count="2">
+<suite name="Allwyn Assignment - Authors Test Automation" verbose="1" parallel="classes" thread-count="2">
 
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-
-    <test name="Books FakeRestAPI Tests">
-        <classes>
-            <class name="org.allwynassignment.tests.BooksTests"/>
-        </classes>
-    </test>
 
     <test name="Authors FakeRestAPI Tests">
         <classes>

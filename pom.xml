@@ -24,6 +24,9 @@
         <maven.surefire.version>3.5.4</maven.surefire.version>
         <maven.compiler.version>3.14.1</maven.compiler.version>
         <allure-maven.version>2.16.1</allure-maven.version>
+
+        <suite.file>testng.xml</suite.file>
+        <thread.count>2</thread.count>
     </properties>
 
     <dependencies>
@@ -110,13 +113,19 @@
                 <version>3.1.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
+                        <suiteXmlFile>src/test/resources/${suite.file}</suiteXmlFile>
                     </suiteXmlFiles>
                     <systemPropertyVariables>
                         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                     <forkCount>1</forkCount>
                     <reuseForks>true</reuseForks>
+                    <properties>
+                        <property>
+                            <name>dataproviderthreadcount</name>
+                            <value>${thread.count}</value>
+                        </property>
+                    </properties>
                 </configuration>
                 <dependencies>
                     <dependency>

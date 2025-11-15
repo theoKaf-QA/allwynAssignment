@@ -6,8 +6,25 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'ENVIRONMENT', choices: ['test', 'staging', 'prod'], description: 'Select test environment')
-        string(name: 'BASE_URI', defaultValue: 'https://fakerestapi.azurewebsites.net', description: 'API Base URI')
+         choice(name: 'ENVIRONMENT', choices: ['test', 'staging', 'prod'], description: 'Select test environment')
+         string(name: 'BASE_URI', defaultValue: 'https://fakerestapi.azurewebsites.net', description: 'API Base URI')
+         choice(
+                name: 'TEST_SUITE',
+                choices: ['testng.xml', 'testng-smoke.xml', 'testng-regression.xml', 'testng-books.xml', 'testng-authors.xml'],
+                description: 'Select TestNG suite to run'
+            )
+         choice(
+                    name: 'THREAD_COUNT',
+                    choices: ['1', '2', '3', '4', '5'],
+                    description: 'Number of parallel threads'
+            )
+         booleanParam(
+                    name: 'SKIP_TESTS',
+                    defaultValue: false,
+                    description: 'Skip test execution (useful for compile-only builds)'
+            )
+
+
     }
 
     environment {
@@ -48,29 +65,28 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
-            steps {
-                echo "Running API tests on ${params.ENVIRONMENT} environment..."
-                script {
-                    try {
-                        if (isUnix()) {
-                            sh """
-                                mvn test \
-                                -Dbase.uri=${params.BASE_URI} \
-                                -Dtest.environment=${params.ENVIRONMENT}
-                            """
-                        } else {
-                            bat """
-                                mvn test -Dbase.uri=${params.BASE_URI} -Dtest.environment=${params.ENVIRONMENT}
-                            """
-                        }
-                    } catch (Exception e) {
-                        echo "Tests failed, but continuing to generate reports..."
-                        currentBuild.result = 'UNSTABLE'
-                    }
-                }
-            }
-        }
+         stage('Run Tests') {
+                   when {
+                       expression { params.SKIP_TESTS == false }
+                   }
+                   steps {
+                       echo "Running ${params.TEST_SUITE} on ${params.ENVIRONMENT} environment with ${params.THREAD_COUNT} threads..."
+                       script {
+                           try {
+                               sh """
+                                   mvn test \
+                                   -Dsurefire.suiteXmlFiles=src/test/resources/${params.TEST_SUITE} \
+                                   -Dbase.uri=${params.BASE_URI} \
+                                   -Dtest.environment=${params.ENVIRONMENT} \
+                                   -Dthread.count=${params.THREAD_COUNT}
+                               """
+                           } catch (Exception e) {
+                               echo "Tests failed, but continuing to generate reports..."
+                               currentBuild.result = 'UNSTABLE'
+                           }
+                       }
+                   }
+               }
 
         stage('Generate Allure Report') {
             steps {
