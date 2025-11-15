@@ -71,8 +71,10 @@ pipeline {
                    }
                    steps {
                        echo "Running ${params.TEST_SUITE} on ${params.ENVIRONMENT} environment with ${params.THREAD_COUNT} threads..."
+
                        script {
                            try {
+                           if(isUnix()){
                                sh """
                                    mvn test \
                                    -Dsurefire.suiteXmlFiles=src/test/resources/${params.TEST_SUITE} \
@@ -80,6 +82,16 @@ pipeline {
                                    -Dtest.environment=${params.ENVIRONMENT} \
                                    -Dthread.count=${params.THREAD_COUNT}
                                """
+                               }
+                               else{
+                              bat """
+                                    mvn test \
+                                    -Dsurefire.suiteXmlFiles=src/test/resources/${params.TEST_SUITE} \
+                                    -Dbase.uri=${params.BASE_URI} \
+                                    -Dtest.environment=${params.ENVIRONMENT} \
+                                    -Dthread.count=${params.THREAD_COUNT}
+                              """
+                               }
                            } catch (Exception e) {
                                echo "Tests failed, but continuing to generate reports..."
                                currentBuild.result = 'UNSTABLE'
