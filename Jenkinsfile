@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        allure 'Allure'
+    }
+
     parameters {
         choice(name: 'ENVIRONMENT', choices: ['test', 'staging', 'prod'], description: 'Select test environment')
         string(name: 'BASE_URI', defaultValue: 'https://fakerestapi.azurewebsites.net', description: 'API Base URI')
