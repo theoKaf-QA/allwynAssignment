@@ -61,7 +61,8 @@ public class AuthorsTests extends BaseTest {
 
         Author createdAuthor = authorValidations.parseResponse(response);
         authorValidations.verifyNotNull(createdAuthor);
-        authorValidations.verifyAuthorIDBook(createdAuthor, createdAuthor.getId());
+        authorValidations.verifyAuthorID(createdAuthor, createdAuthor.getId());
+        authorValidations.verifyAuthorIDBook(createdAuthor, createdAuthor.getIdBook());
         authorValidations.verifyAuthorFirstName(createdAuthor, newAuthor.getFirstName());
         authorValidations.verifyAuthorLastName(createdAuthor, newAuthor.getLastName());
     }
