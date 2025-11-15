@@ -73,6 +73,10 @@ public class ConfigHandler {
         return Integer.parseInt(getProperty("retry.count"));
     }
 
+    public int getRetryInterval() {
+        return Integer.parseInt(getProperty("retry.interval"));
+    }
+
     public String getEnvironment() {
         return getProperty("run.environment");
     }
