@@ -66,4 +66,21 @@ public class BooksTests extends BaseTest{
         bookValidations.verifyBookId(book, validBookId);
         bookValidations.verifyBookHasValidTitle(book);
     }
+
+    @Test(priority = 4, description = "Verify GET book with invalid IDs, must fail",
+            groups = {"smoke"},
+            dataProvider = "invalidBookIds", dataProviderClass = BooksDataProvider.class)
+    @Tags({@Tag("smoke")})
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Verify that GET /Books/{id} endpoint finds the book with the specified ID and validates its details")
+    public void testGetBookById_InvalidId_Fail(int invalidBookId) {
+        Response response = bookActions.getBookById(invalidBookId);
+
+        bookValidations.verifyStatusCode(response, 200);
+
+        Book book = bookValidations.parseResponse(response);
+        bookValidations.verifyNotNull(book);
+        bookValidations.verifyBookId(book, invalidBookId);
+        bookValidations.verifyBookHasValidTitle(book);
+    }
 }
