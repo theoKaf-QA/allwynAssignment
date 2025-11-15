@@ -10,6 +10,8 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
+
 @Slf4j
 public abstract class BaseTest {
     protected BookActions bookActions;
@@ -34,16 +36,15 @@ public abstract class BaseTest {
     }
 
     protected void assertTrue(boolean condition, String message) {
-        if (!condition) {
-            log.error("Expected condition: {} to be true but it was false. Message:", message);
-            throw new AssertionError(message);
-        }
+        assertThat(condition)
+                .as(message)
+                .isTrue();
     }
+
     protected void assertFalse(boolean condition, String message) {
-        if (condition) {
-            log.error("Expected condition: {} to be false but it was true. Message:", message);
-            throw new AssertionError(message);
-        }
+        assertThat(condition)
+                .as(message)
+                .isFalse();
     }
 
 }

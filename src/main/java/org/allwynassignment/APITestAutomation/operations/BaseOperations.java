@@ -3,6 +3,7 @@ package org.allwynassignment.APITestAutomation.operations;
 import io.restassured.response.Response;
 import org.allwynassignment.APITestAutomation.clients.FakeRestAPIClient;
 import org.allwynassignment.APITestAutomation.clients.WebClientInterface;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class BaseOperations {
     protected final WebClientInterface webClient;
@@ -23,11 +24,10 @@ public class BaseOperations {
     }
 
     protected void validateResponse(Response response, int expectedStatusCode) {
-        if (response.getStatusCode() != expectedStatusCode) {
-            throw new AssertionError(
-                    String.format("Expected status code %d but got %d. Response: %s",
-                            expectedStatusCode, response.getStatusCode(), response.asString())
-            );
-        }
+
+        assertThat(response.getStatusCode())
+                .as("Expected status code {} but got {}", expectedStatusCode, response.getStatusCode())
+                .isNotNull()
+                .isEqualTo(expectedStatusCode);
     }
 }
