@@ -21,14 +21,26 @@ pipeline {
         stage('Clean Workspace') {
             steps {
                 echo 'Cleaning workspace...'
-                sh 'mvn clean'
+                script {
+                    if (isUnix()) {
+                        sh 'mvn clean'
+                    } else {
+                        bat 'mvn clean'
+                    }
+                }
             }
         }
 
         stage('Compile') {
             steps {
                 echo 'Compiling the project...'
-                sh 'mvn compile'
+                script {
+                    if (isUnix()) {
+                        sh 'mvn compile'
+                    } else {
+                        bat 'mvn compile'
+                    }
+                }
             }
         }
 
@@ -37,12 +49,17 @@ pipeline {
                 echo "Running API tests on ${params.ENVIRONMENT} environment..."
                 script {
                     try {
-                        sh """
-                            mvn test
-//                             \
-//                             -Dbase.uri=${params.BASE_URI} \
-//                             -Dtest.environment=${params.ENVIRONMENT}
-                        """
+                        if (isUnix()) {
+                            sh """
+                                mvn test \
+                                -Dbase.uri=${params.BASE_URI} \
+                                -Dtest.environment=${params.ENVIRONMENT}
+                            """
+                        } else {
+                            bat """
+                                mvn test -Dbase.uri=${params.BASE_URI} -Dtest.environment=${params.ENVIRONMENT}
+                            """
+                        }
                     } catch (Exception e) {
                         echo "Tests failed, but continuing to generate reports..."
                         currentBuild.result = 'UNSTABLE'
