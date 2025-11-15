@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Allwyn Assignment Test Automation" verbose="1" parallel="classes" thread-count="12">
+<suite name="Allwyn Assignment Test Automation" verbose="1" parallel="classes" thread-count="2">
 
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
