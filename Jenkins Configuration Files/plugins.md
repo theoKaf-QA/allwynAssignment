@@ -1,109 +1,212 @@
 ### Most Important:
 
-**Allure Jenkins Plugin                              (allure-jenkins-plugin:2.32.0)
+Allure Jenkins Plugin                              (allure-jenkins-plugin:2.32.0)
+
 Git plugin                                         (git:5.8.0)
+
 Git client plugin                                  (git-client:6.4.0)
+
 JUnit Plugin                                       (junit:1369.v15da_00283f06)
+
 Pipeline                                           (workflow-aggregator:608.v67378e9d3db_1)
+
 Maven Integration plugin                           (maven-plugin:3.27)
+
 Pipeline Maven Integration Plugin                  (pipeline-maven:1567.vb_2c3a_2116860)
-Pipeline Maven Plugin API                          (pipeline-maven-api:1567.vb_2c3a_2116860)**
+
+Pipeline Maven Plugin API                          (pipeline-maven-api:1567.vb_2c3a_2116860)
 
 
 ## The rest that are installed for me
 ASM API Plugin                                     (asm-api:9.9-185.va_6c6b_3348b_c3)
+
 Ant Plugin                                         (ant:520.vd082ecfb_16a_9)
+
 Apache HttpComponents Client 4.x API Plugin        (apache-httpcomponents-client-4-api:4.5.14-269.vfa_2321039a_83)
+
 Bootstrap 5 API Plugin                             (bootstrap5-api:5.3.8-895.v4d0d8e47fea_d)
+
 Branch API Plugin                                  (branch-api:2.1259.v45c101731c76)
+
 Build Name and Description Setter                  (build-name-setter:2.5.1)
+
 Build Timeout                                      (build-timeout:1.38)
+
 Caffeine API Plugin                                (caffeine-api:3.2.3-194.v31a_b_f7a_b_5a_81)
+
 Checks API plugin                                  (checks-api:373.vfe7645102093)
+
 Conditional BuildStep                              (conditional-buildstep:1.5.0)
+
 Config File Provider Plugin                        (config-file-provider:1002.v93e06b_792d44)
+
 Configuration as Code Plugin                       (configuration-as-code:2006.v001a_2ca_6b_574)
+
 Credentials Binding Plugin                         (credentials-binding:702.vfe613e537e88)
+
 Credentials Plugin                                 (credentials:1447.v4cb_b_539b_5321)
+
 Dark Theme                                         (dark-theme:574.va_19f05d54df5)
+
 Dashboard View                                     (dashboard-view:2.543.vca_9da_3cb_9c60)
+
 Dev Tools Symbols API Plugin                       (oss-symbols-api:424.ved751e062911)
+
 Display URL API                                    (display-url-api:2.217.va_6b_de84cc74b_)
+
 Durable Task Plugin                                (durable-task:635.v3733cef34b_5e)
+
 ECharts API Plugin                                 (echarts-api:6.0.0-1165.vd1283a_3e37d4)
+
 EDDSA API Plugin                                   (eddsa-api:0.3.0.1-19.vc432d923e5ee)
+
 Email Extension Plugin                             (email-ext:1933.v45cec755423f)
+
 Folders Plugin                                     (cloudbees-folder:6.1073.va_7888eb_dd514)
+
 Font Awesome API Plugin                            (font-awesome-api:7.1.0-882.v1dfb_771e3278)
+
 GitHub API Plugin                                  (github-api:1.330-492.v3941a_032db_2a_)
+
 GitHub Branch Source Plugin                        (github-branch-source:1917.v9ee8a_39b_3d0d)
+
 GitHub plugin                                      (github:1.45.0)
+
 Gradle Plugin                                      (gradle:2.16.1149.v711b_998b_0532)
+
 Gson API Plugin                                    (gson-api:2.13.2-173.va_a_092315913c)
+
 HTML Publisher plugin                              (htmlpublisher:427)
+
 Instance Identity                                  (instance-identity:203.v15e81a_1b_7a_38)
+
 Ionicons API                                       (ionicons-api:94.vcc3065403257)
+
 JAXB plugin                                        (jaxb:2.3.9-133.vb_ec76a_73f706)
+
 JQuery3 API Plugin                                 (jquery3-api:3.7.1-619.vdb_10e002501a_)
+
 JSON Api Plugin                                    (json-api:20250517-173.v596efb_962a_31)
+
 JSON Path API Plugin                               (json-path-api:2.10.0-202.va_9cc16c1e476)
+
 JSch dependency plugin                             (jsch:0.2.16-95.v3eecb_55fa_b_78)
+
 Jackson 2 API Plugin                               (jackson2-api:2.20.1-423.v13951f6b_6532)
+
 Jakarta Activation API                             (jakarta-activation-api:2.1.3-2)
+
 Jakarta Mail API                                   (jakarta-mail-api:2.1.3-3)
+
 Jakarta XML Binding API                            (jakarta-xml-bind-api:4.0.5-3.v3d5b_a_73965b_9)
+
 Java JSON Web Token (JJWT) Plugin                  (jjwt-api:0.11.5-120.v0268cf544b_89)
+
 JavaBeans Activation Framework (JAF) API           (javax-activation-api:1.2.0-8)
+
 Javadoc Plugin                                     (javadoc:354.vee1a_660b_4990)
+
 Joda Time API Plugin                               (joda-time-api:2.14.0-149.v1c3ce991d1b_9)
+
 LDAP Plugin                                        (ldap:793.v754d6b_41b_ea_4)
+
 Mailer Plugin                                      (mailer:522.va_995fa_cfb_8b_d)
+
 Matrix Authorization Strategy Plugin               (matrix-auth:3.2.8)
+
 Matrix Project Plugin                              (matrix-project:870.v9db_fcfc2f45b_)
+
 Metrics Plugin                                     (metrics:4.2.37-489.vb_6db_69b_ce753)
+
 Mina SSHD API :: Common                            (mina-sshd-api-common:2.16.0-167.va_269f38cc024)
+
 Mina SSHD API :: Core                              (mina-sshd-api-core:2.16.0-167.va_269f38cc024)
+
 OWASP Markup Formatter Plugin                      (antisamy-markup-formatter:173.v680e3a_b_69ff3)
+
 OkHttp Plugin                                      (okhttp-api:4.12.0-195.vc02552c04ffd)
+
 Parameterized Trigger plugin                       (parameterized-trigger:873.v8b_e37dd8418f)
+
 Pipeline Graph View Plugin                         (pipeline-graph-view:661.v6003f4542123)
+
 Pipeline: API                                      (workflow-api:1384.vdc05a_48f535f)
+
 Pipeline: Basic Steps                              (workflow-basic-steps:1098.v808b_fd7f8cf4)
+
 Pipeline: Build Step                               (pipeline-build-step:571.v08a_fffd4b_0ce)
+
 Pipeline: Declarative                              (pipeline-model-definition:2.2277.v00573e73ddf1)
+
 Pipeline: Declarative Extension Points API         (pipeline-model-extensions:2.2277.v00573e73ddf1)
+
 Pipeline: GitHub Groovy Libraries                  (pipeline-github-lib:65.v203688e7727e)
+
 Pipeline: Groovy                                   (workflow-cps:4218.vff679a_5c0f3a_)
+
 Pipeline: Groovy Libraries                         (pipeline-groovy-lib:776.vfee5327b_b_a_5b_)
+
 Pipeline: Input Step                               (pipeline-input-step:540.v14b_100d754dd)
+
 Pipeline: Job                                      (workflow-job:1559.va_a_533730b_ea_d)
+
 Pipeline: Milestone Step                           (pipeline-milestone-step:138.v78ca_76831a_43)
+
 Pipeline: Model API                                (pipeline-model-api:2.2277.v00573e73ddf1)
+
 Pipeline: Multibranch                              (workflow-multibranch:821.vc3b_4ea_780798)
+
 Pipeline: Nodes and Processes                      (workflow-durable-task-step:1464.v2d3f5c68f84c)
+
 Pipeline: SCM Step                                 (workflow-scm-step:466.va_d69e602552b_)
+
 Pipeline: Stage Step                               (pipeline-stage-step:322.vecffa_99f371c)
+
 Pipeline: Stage Tags Metadata                      (pipeline-stage-tags-metadata:2.2277.v00573e73ddf1)
+
 Pipeline: Step API                                 (workflow-step-api:710.v3e456cc85233)
+
 Pipeline: Supporting APIs                          (workflow-support:1004.veee3a_d67cdb_9)
+
 Plain Credentials Plugin                           (plain-credentials:199.v9f8e1f741799)
+
 Plugin Utilities API Plugin                        (plugin-util-api:6.1192.v30fe6e2837ff)
+
 Prism API Plugin                                   (prism-api:1.30.0-630.va_e19d17f83b_0)
+
 Resource Disposer Plugin                           (resource-disposer:0.25)
+
 Run Condition Plugin                               (run-condition:243.v3c3f94e46a_8b_)
+
 SCM API Plugin                                     (scm-api:712.v8846fdd68c88)
+
 SSH Build Agents plugin                            (ssh-slaves:3.1085.vc64d040efa_85)
+
 SSH Credentials Plugin                             (ssh-credentials:361.vb_f6760818e8c)
+
 Script Security Plugin                             (script-security:1385.v7d2d9ec4d909)
+
 SnakeYAML API Plugin                               (snakeyaml-api:2.5-143.v93b_c004f89de)
+
 Structs Plugin                                     (structs:353.v261ea_40a_80fb_)
+
 Theme Manager                                      (theme-manager:327.v780d7096ec29)
+
 Timestamper                                        (timestamper:1.30)
+
 Token Macro Plugin                                 (token-macro:477.vd4f0dc3cb_cf1)
+
 Trilead API Plugin                                 (trilead-api:2.209.v0e69b_c43c245)
+
 Variant Plugin                                     (variant:70.va_d9f17f859e0)
+
 Workspace Cleanup Plugin                           (ws-cleanup:0.49)
+
 bouncycastle API Plugin                            (bouncycastle-api:2.30.1.82-277.v70ca_0b_877184)
+
 commons-lang3 v3.x Jenkins API Plugin              (commons-lang3-api:3.19.0-104.v12125f33a_255)
+
 commons-text API Plugin                            (commons-text-api:1.14.0-194.v804a_dc3a_1b_d8)
+
+
 jsoup API Plugin                                   (jsoup:1.21.2-66.v6ea_38164b_8a_2)
