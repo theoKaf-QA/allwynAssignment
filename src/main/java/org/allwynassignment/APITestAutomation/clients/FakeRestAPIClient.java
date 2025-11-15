@@ -17,8 +17,13 @@ public class FakeRestAPIClient implements WebClientInterface{
     }
 
     private void configureRestAssured() {
-        RestAssured.baseURI = config.getBaseUri();
-        RestAssured.basePath = config.getBasePath();
+        if(config.getEnvironment().equalsIgnoreCase("test")){
+            RestAssured.baseURI = config.getTestUri();
+            RestAssured.basePath = config.getTestPath();
+        }else {
+            RestAssured.baseURI = config.getBaseUri();
+            RestAssured.basePath = config.getBasePath();
+        }
     }
 
 

@@ -45,8 +45,16 @@ public class ConfigHandler {
         return getProperty("base.uri");
     }
 
+    public String getTestUri() {
+        return getProperty("test.uri");
+    }
+
     public String getBasePath() {
         return getProperty("base.path");
+    }
+
+    public String getTestPath() {
+        return getProperty("test.path");
     }
 
     public String getBooksEndpoint() {
