@@ -51,7 +51,7 @@ public class BookActions extends BaseOperations implements ActionsInterface<Book
         return getByID(id);
     }
 
-    public Response createBook(Book book) {
+    public Response addBook(Book book) {
         return add(book);
     }
 

@@ -2,6 +2,7 @@ package org.allwynassignment.APITestAutomation.utils;
 
 import org.allwynassignment.APITestAutomation.models.Author;
 
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -19,6 +20,13 @@ public class AuthorDataFactory {
                 .build();
     }
 
+    public static Author createMinimalAuthor() {
+        return Author.builder()
+                .id(300)
+                .build();
+    }
+
+
     public static Author createInvalidAuthor() {
         return Author.builder()
                 .id(-1)
@@ -28,7 +36,13 @@ public class AuthorDataFactory {
                 .build();
     }
 
-    private static String getCurrentDateTime() {
-        return LocalDateTime.now().format(DATE_FORMATTER);
+    public static Author updateValidAuthor(Author author) {
+        return author.toBuilder()
+                .id(author.getId())
+                .idBook(author.getIdBook())
+                .firstName(author.getFirstName())
+                .lastName(author.getLastName())
+                .build();
     }
+
 }

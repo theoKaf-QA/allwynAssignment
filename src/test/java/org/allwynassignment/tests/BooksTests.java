@@ -76,7 +76,7 @@ public class BooksTests extends BaseTest{
     public void testCreateAuthor_ValidData_Success() {
         Book validBook = BookDataFactory.createValidBook();
 
-        Response response = bookActions.createBook(validBook);
+        Response response = bookActions.addBook(validBook);
 
         bookValidations.verifyStatusCode(response, 200);
 
@@ -162,7 +162,7 @@ public class BooksTests extends BaseTest{
     public void testCreateBook_OnlyID_Success() {
         Book minimalBook = BookDataFactory.createMinimalBook();
 
-        Response response = bookActions.createBook(minimalBook);
+        Response response = bookActions.addBook(minimalBook);
         Book responseBook = bookValidations.parseResponse(response);
 
         bookValidations.verifyBookHasInvalidTitle(responseBook);
@@ -180,7 +180,7 @@ public class BooksTests extends BaseTest{
     public void testCreateBook_NoFields_Success() {
         Book emptyBook = BookDataFactory.createEmptyBook();
 
-        Response response = bookActions.createBook(emptyBook);
+        Response response = bookActions.addBook(emptyBook);
         Book responseBook = bookValidations.parseResponse(response);
 
         bookValidations.verifyBookId(responseBook,0);
@@ -198,7 +198,7 @@ public class BooksTests extends BaseTest{
     @Description("Test to verify error handling with invalid book fields")
     public void testCreateBook_InvalidData() {
         Book invalidBook = BookDataFactory.createInvalidBook();
-        Response response = bookActions.createBook(invalidBook);
+        Response response = bookActions.addBook(invalidBook);
         bookValidations.verifyErrorStatusCode(response);
     }
 
@@ -230,7 +230,7 @@ public class BooksTests extends BaseTest{
         bookValidations.verifySuccessfulStatusCode200(response);
     }
 
-    @Test(priority = 14, description = "Verify large page count is handled correctly")
+    @Test(priority = 15, description = "Verify large page count is handled correctly")
     @Story("Create Book")
     @Severity(SeverityLevel.MINOR)
     @Description("Test to verify handling of extreme values for pageCount")
@@ -245,13 +245,13 @@ public class BooksTests extends BaseTest{
                         .build()
         );
 
-        Response response = bookActions.createBook(book);
+        Response response = bookActions.addBook(book);
 
         bookValidations.verifyStatusCode(response, 200);
     }
 
 
-    @Test(priority = 15, description = "Verify GET book with invalid IDs, fails",
+    @Test(priority = 20, description = "Verify GET book with invalid IDs, fails",
             groups = {"smoke"},
             dataProvider = "invalidBookIds", dataProviderClass = BooksDataProvider.class)
     @Tags({@Tag("smoke")})
