@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" class="navigator-link">
+              <span class="suite-name border-failed">Allwyn Assignment Test Automation</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>C:\Users\link_\IdeaProjects\allwynAssignment\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>2 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Allwyn_Assignment_Test_Automation" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">33 methods, 3 failed,   30 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" class="hide-methods failed suite-Allwyn_Assignment_Test_Automation"> (hide)</a> <!-- hide-methods failed suite-Allwyn_Assignment_Test_Automation -->
+                      <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" class="show-methods failed suite-Allwyn_Assignment_Test_Automation"> (show)</a> <!-- show-methods failed suite-Allwyn_Assignment_Test_Automation -->
+                    </span>
+                    <div class="method-list-content failed suite-Allwyn_Assignment_Test_Automation">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_InvalidId_Fail(-1)">testGetBookById_InvalidId_Fail(-1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_InvalidId_Fail(999999999)">testGetBookById_InvalidId_Fail(999999999)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_InvalidId_Fail(0)">testGetBookById_InvalidId_Fail(0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Allwyn_Assignment_Test_Automation -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" class="hide-methods passed suite-Allwyn_Assignment_Test_Automation"> (hide)</a> <!-- hide-methods passed suite-Allwyn_Assignment_Test_Automation -->
+                      <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" class="show-methods passed suite-Allwyn_Assignment_Test_Automation"> (show)</a> <!-- show-methods passed suite-Allwyn_Assignment_Test_Automation -->
+                    </span>
+                    <div class="method-list-content passed suite-Allwyn_Assignment_Test_Automation">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testCreateAuthor_EmptyBody">testCreateAuthor_EmptyBody</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testCreateAuthor_MinimalData_Success">testCreateAuthor_MinimalData_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testCreateAuthor_ValidData_Success">testCreateAuthor_ValidData_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testCreateAuthor_ValidData_Success">testCreateAuthor_ValidData_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testCreateBook_InvalidData">testCreateBook_InvalidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testCreateBook_LargePageCount">testCreateBook_LargePageCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testCreateBook_NoFields_Success">testCreateBook_NoFields_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testCreateBook_OnlyID_Success">testCreateBook_OnlyID_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testDeleteAuthor_ValidId_Success">testDeleteAuthor_ValidId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testDeleteAuthor_negativeID_Success">testDeleteAuthor_negativeID_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testDeleteBook_NegativeId_Success">testDeleteBook_NegativeId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testDeleteBook_ValidId_Success">testDeleteBook_ValidId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testGetAllAuthors_Success">testGetAllAuthors_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetAllBooks_Success">testGetAllBooks_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testGetAuthorById_NegativeId">testGetAuthorById_NegativeId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testGetAuthorById_NonExistentId_ReturnsNotFound">testGetAuthorById_NonExistentId_ReturnsNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testGetAuthorById_ValidId_Success">testGetAuthorById_ValidId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testGetAuthorById_ZeroId">testGetAuthorById_ZeroId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_NegativeId">testGetBookById_NegativeId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_NonExistentId_ReturnsNotFound">testGetBookById_NonExistentId_ReturnsNotFound</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ValidId_Success(2)">testGetBookById_ValidId_Success(2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ValidId_Success">testGetBookById_ValidId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ValidId_Success(1)">testGetBookById_ValidId_Success(1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ValidId_Success(10)">testGetBookById_ValidId_Success(10)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ValidId_Success(5)">testGetBookById_ValidId_Success(5)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testGetBookById_ZeroId">testGetBookById_ZeroId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testUpdateAuthor_ValidData_Success">testUpdateAuthor_ValidData_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.AuthorsTests" class="method navigator-link" hash-for-method="testUpdateAuthor_negativeID_Success">testUpdateAuthor_negativeID_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testUpdateBook_NegativeId_Success">testUpdateBook_NegativeId_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Allwyn_Assignment_Test_Automation" title="org.allwynassignment.tests.BooksTests" class="method navigator-link" hash-for-method="testUpdateBook_ValidData_Success">testUpdateBook_ValidData_Success</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Allwyn_Assignment_Test_Automation -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Allwyn_Assignment_Test_Automation" class="panel Allwyn_Assignment_Test_Automation">
+          <div class="suite-Allwyn_Assignment_Test_Automation-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.allwynassignment.tests.BooksTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_InvalidId_Fail(-1)">
+                  </a> <!-- testGetBookById_InvalidId_Fail(-1) -->
+                  <span class="method-name">testGetBookById_InvalidId_Fail</span>
+                  <span class="parameters">(-1)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Verify response status code is {}] 
+expected: 404
+ but was: 200
+	at org.allwynassignment.APITestAutomation.operations.validations.ValidationsAbstract.verifyStatusCode(ValidationsAbstract.java:16)
+	at org.allwynassignment.tests.BooksTests.testGetBookById_InvalidId_Fail(BooksTests.java:263)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify GET book with invalid IDs, fails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_InvalidId_Fail(999999999)">
+                  </a> <!-- testGetBookById_InvalidId_Fail(999999999) -->
+                  <span class="method-name">testGetBookById_InvalidId_Fail</span>
+                  <span class="parameters">(999999999)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Verify response status code is {}] 
+expected: 404
+ but was: 200
+	at org.allwynassignment.APITestAutomation.operations.validations.ValidationsAbstract.verifyStatusCode(ValidationsAbstract.java:16)
+	at org.allwynassignment.tests.BooksTests.testGetBookById_InvalidId_Fail(BooksTests.java:263)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify GET book with invalid IDs, fails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_InvalidId_Fail(0)">
+                  </a> <!-- testGetBookById_InvalidId_Fail(0) -->
+                  <span class="method-name">testGetBookById_InvalidId_Fail</span>
+                  <span class="parameters">(0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: [Verify response status code is {}] 
+expected: 404
+ but was: 200
+	at org.allwynassignment.APITestAutomation.operations.validations.ValidationsAbstract.verifyStatusCode(ValidationsAbstract.java:16)
+	at org.allwynassignment.tests.BooksTests.testGetBookById_InvalidId_Fail(BooksTests.java:263)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify GET book with invalid IDs, fails)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Allwyn_Assignment_Test_Automation-class-failed -->
+          <div class="suite-Allwyn_Assignment_Test_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.allwynassignment.tests.BooksTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthor_ValidData_Success">
+                  </a> <!-- testCreateAuthor_ValidData_Success -->
+                  <span class="method-name">testCreateAuthor_ValidData_Success</span>
+                  <em>
+(Verify POST creates a new book successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBook_InvalidData">
+                  </a> <!-- testCreateBook_InvalidData -->
+                  <span class="method-name">testCreateBook_InvalidData</span>
+                  <em>
+(Verify POST book with invalid data types)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBook_LargePageCount">
+                  </a> <!-- testCreateBook_LargePageCount -->
+                  <span class="method-name">testCreateBook_LargePageCount</span>
+                  <em>
+(Verify large page count is handled correctly)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBook_NoFields_Success">
+                  </a> <!-- testCreateBook_NoFields_Success -->
+                  <span class="method-name">testCreateBook_NoFields_Success</span>
+                  <em>
+(Verify POST book with empty body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateBook_OnlyID_Success">
+                  </a> <!-- testCreateBook_OnlyID_Success -->
+                  <span class="method-name">testCreateBook_OnlyID_Success</span>
+                  <em>
+(Verify POST book with the least amount of data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBook_NegativeId_Success">
+                  </a> <!-- testDeleteBook_NegativeId_Success -->
+                  <span class="method-name">testDeleteBook_NegativeId_Success</span>
+                  <em>
+(Verify DELETE book with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteBook_ValidId_Success">
+                  </a> <!-- testDeleteBook_ValidId_Success -->
+                  <span class="method-name">testDeleteBook_ValidId_Success</span>
+                  <em>
+(Verify DELETE removes a book successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllBooks_Success">
+                  </a> <!-- testGetAllBooks_Success -->
+                  <span class="method-name">testGetAllBooks_Success</span>
+                  <em>
+(Verify GET books returns 200 and list of books)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_NegativeId">
+                  </a> <!-- testGetBookById_NegativeId -->
+                  <span class="method-name">testGetBookById_NegativeId</span>
+                  <em>
+(Verify GET book with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_NonExistentId_ReturnsNotFound">
+                  </a> <!-- testGetBookById_NonExistentId_ReturnsNotFound -->
+                  <span class="method-name">testGetBookById_NonExistentId_ReturnsNotFound</span>
+                  <em>
+(Verify GET book with nonexistent ID returns 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ValidId_Success(2)">
+                  </a> <!-- testGetBookById_ValidId_Success(2) -->
+                  <span class="method-name">testGetBookById_ValidId_Success</span>
+                  <span class="parameters">(2)</span>
+                  <em>
+(Verify GET book with multiple valid IDs, they all return 200 and book details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ValidId_Success">
+                  </a> <!-- testGetBookById_ValidId_Success -->
+                  <span class="method-name">testGetBookById_ValidId_Success</span>
+                  <em>
+(Verify GET book by valid ID returns 200 and book details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ValidId_Success(1)">
+                  </a> <!-- testGetBookById_ValidId_Success(1) -->
+                  <span class="method-name">testGetBookById_ValidId_Success</span>
+                  <span class="parameters">(1)</span>
+                  <em>
+(Verify GET book with multiple valid IDs, they all return 200 and book details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ValidId_Success(10)">
+                  </a> <!-- testGetBookById_ValidId_Success(10) -->
+                  <span class="method-name">testGetBookById_ValidId_Success</span>
+                  <span class="parameters">(10)</span>
+                  <em>
+(Verify GET book with multiple valid IDs, they all return 200 and book details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ValidId_Success(5)">
+                  </a> <!-- testGetBookById_ValidId_Success(5) -->
+                  <span class="method-name">testGetBookById_ValidId_Success</span>
+                  <span class="parameters">(5)</span>
+                  <em>
+(Verify GET book with multiple valid IDs, they all return 200 and book details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetBookById_ZeroId">
+                  </a> <!-- testGetBookById_ZeroId -->
+                  <span class="method-name">testGetBookById_ZeroId</span>
+                  <em>
+(Verify GET book with zero ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateBook_NegativeId_Success">
+                  </a> <!-- testUpdateBook_NegativeId_Success -->
+                  <span class="method-name">testUpdateBook_NegativeId_Success</span>
+                  <em>
+(Verify PUT book with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateBook_ValidData_Success">
+                  </a> <!-- testUpdateBook_ValidData_Success -->
+                  <span class="method-name">testUpdateBook_ValidData_Success</span>
+                  <em>
+(Verify PUT updates an existing book successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Allwyn_Assignment_Test_Automation-class-passed -->
+          <div class="suite-Allwyn_Assignment_Test_Automation-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.allwynassignment.tests.AuthorsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthor_EmptyBody">
+                  </a> <!-- testCreateAuthor_EmptyBody -->
+                  <span class="method-name">testCreateAuthor_EmptyBody</span>
+                  <em>
+(Verify POST author with empty body)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthor_MinimalData_Success">
+                  </a> <!-- testCreateAuthor_MinimalData_Success -->
+                  <span class="method-name">testCreateAuthor_MinimalData_Success</span>
+                  <em>
+(Verify POST author with minimal data)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCreateAuthor_ValidData_Success">
+                  </a> <!-- testCreateAuthor_ValidData_Success -->
+                  <span class="method-name">testCreateAuthor_ValidData_Success</span>
+                  <em>
+(Verify POST creates a new author successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAuthor_ValidId_Success">
+                  </a> <!-- testDeleteAuthor_ValidId_Success -->
+                  <span class="method-name">testDeleteAuthor_ValidId_Success</span>
+                  <em>
+(Verify DELETE removes an author successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDeleteAuthor_negativeID_Success">
+                  </a> <!-- testDeleteAuthor_negativeID_Success -->
+                  <span class="method-name">testDeleteAuthor_negativeID_Success</span>
+                  <em>
+(Verify DELETE author with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAllAuthors_Success">
+                  </a> <!-- testGetAllAuthors_Success -->
+                  <span class="method-name">testGetAllAuthors_Success</span>
+                  <em>
+(Verify GET all authors returns 200 and list of authors)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorById_NegativeId">
+                  </a> <!-- testGetAuthorById_NegativeId -->
+                  <span class="method-name">testGetAuthorById_NegativeId</span>
+                  <em>
+(Verify GET author with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorById_NonExistentId_ReturnsNotFound">
+                  </a> <!-- testGetAuthorById_NonExistentId_ReturnsNotFound -->
+                  <span class="method-name">testGetAuthorById_NonExistentId_ReturnsNotFound</span>
+                  <em>
+(Verify GET author with noexistent ID returns 404)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorById_ValidId_Success">
+                  </a> <!-- testGetAuthorById_ValidId_Success -->
+                  <span class="method-name">testGetAuthorById_ValidId_Success</span>
+                  <em>
+(Verify GET author by valid ID returns 200 and author details)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testGetAuthorById_ZeroId">
+                  </a> <!-- testGetAuthorById_ZeroId -->
+                  <span class="method-name">testGetAuthorById_ZeroId</span>
+                  <em>
+(Verify GET author with zero ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateAuthor_ValidData_Success">
+                  </a> <!-- testUpdateAuthor_ValidData_Success -->
+                  <span class="method-name">testUpdateAuthor_ValidData_Success</span>
+                  <em>
+(Verify PUT updates an existing author successfully)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateAuthor_negativeID_Success">
+                  </a> <!-- testUpdateAuthor_negativeID_Success -->
+                  <span class="method-name">testUpdateAuthor_negativeID_Success</span>
+                  <em>
+(Verify PUT author with negative ID)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Allwyn_Assignment_Test_Automation-class-passed -->
+        </div> <!-- panel Allwyn_Assignment_Test_Automation -->
+        <div panel-name="test-xml-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\link_\IdeaProjects\allwynAssignment\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; data-provider-thread-count=&quot;2&quot; name=&quot;Allwyn Assignment Test Automation&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;io.qameta.allure.testng.AllureTestNg&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Books FakeRestAPI Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.allwynassignment.tests.BooksTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Books FakeRestAPI Tests --&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Authors FakeRestAPI Tests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.allwynassignment.tests.AuthorsTests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Authors FakeRestAPI Tests --&gt;
+&lt;/suite&gt; &lt;!-- Allwyn Assignment Test Automation --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Allwyn Assignment Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Books FakeRestAPI Tests (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Authors FakeRestAPI Tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Allwyn Assignment Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateAuthor_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteAuthor_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteBook_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAllAuthors_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAllBooks_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_NegativeId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_NonExistentId_ReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_ZeroId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_NonExistentId_ReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateAuthor_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateBook_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateAuthor_EmptyBody</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateAuthor_MinimalData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateAuthor_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateBook_InvalidData</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateBook_NoFields_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testCreateBook_OnlyID_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteAuthor_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteAuthor_negativeID_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteBook_NegativeId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testDeleteBook_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAllAuthors_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAllBooks_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_NegativeId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_NonExistentId_ReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetAuthorById_ZeroId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_InvalidId_Fail</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_NegativeId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_NonExistentId_ReturnsNotFound</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_ValidId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testGetBookById_ZeroId</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateAuthor_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateAuthor_negativeID_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateBook_NegativeId_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testUpdateBook_ValidData_Success</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Allwyn Assignment Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Allwyn_Assignment_Test_Automation');
+function tableData_Allwyn_Assignment_Test_Automation() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(33);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCreateAuthor_EmptyBody')
+data.setCell(0, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(0, 3, 3569);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testGetBookById_InvalidId_Fail')
+data.setCell(1, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(1, 3, 3189);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testGetAllBooks_Success')
+data.setCell(2, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(2, 3, 1758);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testGetBookById_ValidId_Success')
+data.setCell(3, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(3, 3, 1505);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testGetBookById_NonExistentId_ReturnsNotFound')
+data.setCell(4, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(4, 3, 1474);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testGetBookById_ValidId_Success')
+data.setCell(5, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(5, 3, 1424);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCreateBook_InvalidData')
+data.setCell(6, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(6, 3, 1079);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testGetAllAuthors_Success')
+data.setCell(7, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(7, 3, 1003);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCreateAuthor_MinimalData_Success')
+data.setCell(8, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(8, 3, 892);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testGetBookById_InvalidId_Fail')
+data.setCell(9, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(9, 3, 796);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCreateBook_OnlyID_Success')
+data.setCell(10, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(10, 3, 745);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testDeleteAuthor_ValidId_Success')
+data.setCell(11, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(11, 3, 712);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testUpdateAuthor_negativeID_Success')
+data.setCell(12, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(12, 3, 709);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testGetBookById_InvalidId_Fail')
+data.setCell(13, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(13, 3, 588);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testCreateBook_NoFields_Success')
+data.setCell(14, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(14, 3, 577);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testGetBookById_ValidId_Success')
+data.setCell(15, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(15, 3, 554);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testGetBookById_NegativeId')
+data.setCell(16, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(16, 3, 447);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testDeleteAuthor_negativeID_Success')
+data.setCell(17, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(17, 3, 417);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testGetBookById_ZeroId')
+data.setCell(18, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(18, 3, 414);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testGetBookById_ValidId_Success')
+data.setCell(19, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(19, 3, 384);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'testGetBookById_ValidId_Success')
+data.setCell(20, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(20, 3, 383);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'testUpdateBook_ValidData_Success')
+data.setCell(21, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(21, 3, 378);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'testGetAuthorById_ZeroId')
+data.setCell(22, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(22, 3, 282);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'testUpdateBook_NegativeId_Success')
+data.setCell(23, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(23, 3, 270);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'testCreateAuthor_ValidData_Success')
+data.setCell(24, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(24, 3, 268);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'testDeleteBook_NegativeId_Success')
+data.setCell(25, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(25, 3, 263);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'testGetAuthorById_ValidId_Success')
+data.setCell(26, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(26, 3, 252);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'testDeleteBook_ValidId_Success')
+data.setCell(27, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(27, 3, 238);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'testUpdateAuthor_ValidData_Success')
+data.setCell(28, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(28, 3, 238);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'testGetAuthorById_NegativeId')
+data.setCell(29, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(29, 3, 238);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'testCreateAuthor_ValidData_Success')
+data.setCell(30, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(30, 3, 238);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'testCreateBook_LargePageCount')
+data.setCell(31, 2, 'org.allwynassignment.tests.BooksTests')
+data.setCell(31, 3, 230);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'testGetAuthorById_NonExistentId_ReturnsNotFound')
+data.setCell(32, 2, 'org.allwynassignment.tests.AuthorsTests')
+data.setCell(32, 3, 225);
+window.suiteTableData['Allwyn_Assignment_Test_Automation']= { tableData: data, tableDiv: 'times-div-Allwyn_Assignment_Test_Automation'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <div id="times-div-Allwyn_Assignment_Test_Automation">
+              </div> <!-- times-div-Allwyn_Assignment_Test_Automation -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Allwyn Assignment Test Automation</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Allwyn_Assignment_Test_Automation" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.allwynassignment.tests.BooksTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAllBooks_Success</span>
+                <span class="method-start">293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAllBooks_Success status=SUCCESS method=BooksTests.testGetAllBooks_Success()[...)</span>
+                <span class="method-start">2058 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ValidId_Success</span>
+                <span class="method-start">2062 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ValidId_Success status=SUCCESS method=BooksTests.testGetBookById_Va...)</span>
+                <span class="method-start">2446 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">2451 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ValidId_Success(1)</span>
+                <span class="method-start">2451 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ValidId_Success status=SUCCESS method=BooksTests.testGetBookById_Va...)</span>
+                <span class="method-start">3877 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ValidId_Success(2)</span>
+                <span class="method-start">3879 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ValidId_Success status=SUCCESS method=BooksTests.testGetBookById_Va...)</span>
+                <span class="method-start">4434 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">4435 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ValidId_Success(5)</span>
+                <span class="method-start">4436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ValidId_Success status=SUCCESS method=BooksTests.testGetBookById_Va...)</span>
+                <span class="method-start">5942 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5943 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ValidId_Success(10)</span>
+                <span class="method-start">5944 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ValidId_Success status=SUCCESS method=BooksTests.testGetBookById_Va...)</span>
+                <span class="method-start">6329 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6330 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAuthor_ValidData_Success</span>
+                <span class="method-start">6331 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateAuthor_ValidData_Success status=SUCCESS method=BooksTests.testCreateAutho...)</span>
+                <span class="method-start">6600 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testUpdateBook_ValidData_Success</span>
+                <span class="method-start">6601 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6601 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testUpdateBook_ValidData_Success status=SUCCESS method=BooksTests.testUpdateBook_Va...)</span>
+                <span class="method-start">6980 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">6983 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBook_ValidId_Success</span>
+                <span class="method-start">6984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeleteBook_ValidId_Success status=SUCCESS method=BooksTests.testDeleteBook_Vali...)</span>
+                <span class="method-start">7224 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7226 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_NonExistentId_ReturnsNotFound</span>
+                <span class="method-start">7228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_NonExistentId_ReturnsNotFound status=SUCCESS method=BooksTests.test...)</span>
+                <span class="method-start">8703 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8704 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_ZeroId</span>
+                <span class="method-start">8705 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_ZeroId status=SUCCESS method=BooksTests.testGetBookById_ZeroId()[pr...)</span>
+                <span class="method-start">9120 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetBookById_NegativeId</span>
+                <span class="method-start">9122 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_NegativeId status=SUCCESS method=BooksTests.testGetBookById_Negativ...)</span>
+                <span class="method-start">9570 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9571 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateBook_OnlyID_Success</span>
+                <span class="method-start">9572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateBook_OnlyID_Success status=SUCCESS method=BooksTests.testCreateBook_OnlyI...)</span>
+                <span class="method-start">10317 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateBook_NoFields_Success</span>
+                <span class="method-start">10319 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateBook_NoFields_Success status=SUCCESS method=BooksTests.testCreateBook_NoF...)</span>
+                <span class="method-start">10897 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10898 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateBook_InvalidData</span>
+                <span class="method-start">10899 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateBook_InvalidData status=SUCCESS method=BooksTests.testCreateBook_InvalidD...)</span>
+                <span class="method-start">11979 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">11980 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateBook_NegativeId_Success</span>
+                <span class="method-start">11981 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testUpdateBook_NegativeId_Success status=SUCCESS method=BooksTests.testUpdateBook_N...)</span>
+                <span class="method-start">12254 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12255 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteBook_NegativeId_Success</span>
+                <span class="method-start">12256 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeleteBook_NegativeId_Success status=SUCCESS method=BooksTests.testDeleteBook_N...)</span>
+                <span class="method-start">12520 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12521 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateBook_LargePageCount</span>
+                <span class="method-start">12522 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateBook_LargePageCount status=SUCCESS method=BooksTests.testCreateBook_Large...)</span>
+                <span class="method-start">12753 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetBookById_InvalidId_Fail(-1)</span>
+                <span class="method-start">12754 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_InvalidId_Fail status=FAILURE method=BooksTests.testGetBookById_Inv...)</span>
+                <span class="method-start">13553 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetBookById_InvalidId_Fail(0)</span>
+                <span class="method-start">13556 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13556 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_InvalidId_Fail status=FAILURE method=BooksTests.testGetBookById_Inv...)</span>
+                <span class="method-start">14145 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">14147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testGetBookById_InvalidId_Fail(999999999)</span>
+                <span class="method-start">14148 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetBookById_InvalidId_Fail status=FAILURE method=BooksTests.testGetBookById_Inv...)</span>
+                <span class="method-start">17338 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.allwynassignment.tests.AuthorsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">17373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAllAuthors_Success</span>
+                <span class="method-start">17374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAllAuthors_Success status=SUCCESS method=AuthorsTests.testGetAllAuthors_Succ...)</span>
+                <span class="method-start">18378 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18379 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAuthorById_ValidId_Success</span>
+                <span class="method-start">18380 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAuthorById_ValidId_Success status=SUCCESS method=AuthorsTests.testGetAuthorB...)</span>
+                <span class="method-start">18632 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18633 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAuthor_ValidData_Success</span>
+                <span class="method-start">18634 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateAuthor_ValidData_Success status=SUCCESS method=AuthorsTests.testCreateAut...)</span>
+                <span class="method-start">18873 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18874 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateAuthor_ValidData_Success</span>
+                <span class="method-start">18875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testUpdateAuthor_ValidData_Success status=SUCCESS method=AuthorsTests.testUpdateAut...)</span>
+                <span class="method-start">19114 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testDeleteAuthor_ValidId_Success</span>
+                <span class="method-start">19115 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeleteAuthor_ValidId_Success status=SUCCESS method=AuthorsTests.testDeleteAutho...)</span>
+                <span class="method-start">19828 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">19829 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAuthorById_NonExistentId_ReturnsNotFound</span>
+                <span class="method-start">19830 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20056 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAuthorById_NonExistentId_ReturnsNotFound status=SUCCESS method=AuthorsTests....)</span>
+                <span class="method-start">20056 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">testGetAuthorById_ZeroId</span>
+                <span class="method-start">20057 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAuthorById_ZeroId status=SUCCESS method=AuthorsTests.testGetAuthorById_ZeroI...)</span>
+                <span class="method-start">20340 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20341 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testGetAuthorById_NegativeId</span>
+                <span class="method-start">20342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testGetAuthorById_NegativeId status=SUCCESS method=AuthorsTests.testGetAuthorById_N...)</span>
+                <span class="method-start">20580 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">20581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAuthor_MinimalData_Success</span>
+                <span class="method-start">20582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateAuthor_MinimalData_Success status=SUCCESS method=AuthorsTests.testCreateA...)</span>
+                <span class="method-start">21475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21476 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testCreateAuthor_EmptyBody</span>
+                <span class="method-start">21477 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testCreateAuthor_EmptyBody status=SUCCESS method=AuthorsTests.testCreateAuthor_Empt...)</span>
+                <span class="method-start">25046 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25047 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testUpdateAuthor_negativeID_Success</span>
+                <span class="method-start">25048 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testUpdateAuthor_negativeID_Success status=SUCCESS method=AuthorsTests.testUpdateAu...)</span>
+                <span class="method-start">25758 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testDeleteAuthor_negativeID_Success</span>
+                <span class="method-start">25761 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=testDeleteAuthor_negativeID_Success status=SUCCESS method=AuthorsTests.testDeleteAu...)</span>
+                <span class="method-start">26179 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
